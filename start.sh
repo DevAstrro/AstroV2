@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Joelkb/DQ-the-file-donor.git /DQTheFileDonorBot
+  git clone https://github.com/DevAstrro/AstroV2.git /AstroV2
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /DQTheFileDonorBot
+  git clone $UPSTREAM_REPO /AstroV2
 fi
-cd /DQTheFileDonorBot
+cd /AstroV2
 pip3 install -U -r requirements.txt
-echo "Starting DQ-The-File-Donor...."
+echo "Starting AstroV2-Bot...."
 python3 bot.py
